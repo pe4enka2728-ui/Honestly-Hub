@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\SwitchController.cs" Link="SwitchController.cs" />
+    <Compile Include="..\RuntimeState.cs" Link="RuntimeState.cs" />
+    <Compile Include="..\ZapretConsoleProtocol.cs" Link="ZapretConsoleProtocol.cs" />
+    <Compile Include="..\ScrollMotion.cs" Link="ScrollMotion.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NAudio.Wasapi" Version="2.2.1" />
+    <Compile Include="..\SpotifyMedia.cs" Link="SpotifyMedia.cs" />
+    <Compile Include="..\AudioSpectrum.cs" Link="AudioSpectrum.cs" />
+    <Compile Include="..\SpotifyVolume.cs" Link="SpotifyVolume.cs" />
+    <Compile Include="..\SpotifyApi.cs" Link="SpotifyApi.cs" />
+    <Compile Include="..\SpotifyOAuth.cs" Link="SpotifyOAuth.cs" />
+    <Compile Include="..\SpotifyConnectionStore.cs" Link="SpotifyConnectionStore.cs" />
+    <Compile Include="..\ClientProfiles.cs" Link="ClientProfiles.cs" />
+    <Compile Include="..\AppShortcutStore.cs" Link="AppShortcutStore.cs" />
+  </ItemGroup>
+</Project>

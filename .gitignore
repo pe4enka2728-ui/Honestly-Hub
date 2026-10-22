@@ -1,0 +1,37 @@
+# Build output and local tools
+/App/
+/.build/
+/artifacts/
+/work/
+/dist/
+**/bin/
+**/obj/
+**/test-output/
+.vs/
+.idea/
+*.user
+*.suo
+*.pdb
+
+# Runtime executables are distributed in Releases
+/Runtime/**/*.exe
+/Runtime/**/*.dll
+
+# Personal configuration, credentials and diagnostics
+settings.json
+applications.json
+profiles.dat
+recovery.dat
+friend-history.dat
+spotify.dat
+*.ht-epic
+*.db
+*.db-shm
+*.db-wal
+*.log
+*.tmp
+.env
+.env.*
+hosts.yml
+*_token*
+*_secret*

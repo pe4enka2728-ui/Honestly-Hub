@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>HonestlyTUN</AssemblyName>
+    <Product>Honestly TUN</Product>
+    <Title>Honestly TUN</Title>
+    <ApplicationIcon>Assets\HonestlyTUN.ico</ApplicationIcon>
+    <Version>2.4.11</Version>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NAudio.Wasapi" Version="2.2.1" />
+    <Compile Remove="Tests\**\*.cs" />
+    <Compile Remove="UiTests\**\*.cs" />
+    <Compile Remove="ClientTests\**\*.cs" />
+    <Compile Remove="IntroTests\**\*.cs" />
+    <Compile Remove="MediaTests\**\*.cs" />
+    <Compile Remove="PetTests\**\*.cs" />
+    <Compile Remove="EpicTests\**\*.cs" />
+    <EmbeddedResource Include="Assets\logo.png" LogicalName="HonestlyTUN.logo.png" />
+    <EmbeddedResource Include="Assets\Flags\*.png" LogicalName="HonestlyTUN.flags.%(Filename)%(Extension)" />
+    <EmbeddedResource Include="Assets\HonestlyTUN.ico" LogicalName="HonestlyTUN.icon.ico" />
+    <Content Include="OcrBridge.ps1" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Always" />
+    <Content Include="Assets\intro.frames.zip" TargetPath="Media\intro.frames.zip" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Always" />
+    <Content Include="Assets\ThatPet\**\*" TargetPath="ThatPet\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Always" />
+    <EmbeddedResource Include="CoreHashes.json" LogicalName="HonestlyTUN.CoreHashes.json" />
+    <InternalsVisibleTo Include="PetTests" />
+    <InternalsVisibleTo Include="EpicVisual" />
+  </ItemGroup>
+</Project>

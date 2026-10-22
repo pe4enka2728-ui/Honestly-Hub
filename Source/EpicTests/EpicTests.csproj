@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\EpicProfiles.cs" Link="EpicProfiles.cs" />
+    <Compile Include="..\EpicRememberedLogin.cs" Link="EpicRememberedLogin.cs" />
+    <Compile Include="..\EpicLogin.cs" Link="EpicLogin.cs" />
+    <Compile Include="..\EpicWindowReadiness.cs" Link="EpicWindowReadiness.cs" />
+    <Compile Include="..\EpicFriends.cs" Link="EpicFriends.cs" />
+    <Compile Include="..\EpicFriendHistory.cs" Link="EpicFriendHistory.cs" />
+    <Compile Include="..\EpicFriendVision.cs" Link="EpicFriendVision.cs" />
+    <Compile Include="..\EpicFriendNameVision.cs" Link="EpicFriendNameVision.cs" />
+    <Compile Include="..\EpicSocialToolbar.cs" Link="EpicSocialToolbar.cs" />
+    <Compile Include="..\EpicFriendRowButton.cs" Link="EpicFriendRowButton.cs" />
+    <Compile Include="..\EpicAccountController.cs" Link="EpicAccountController.cs" />
+    <Compile Include="..\EpicWindows.cs" Link="EpicWindows.cs" />
+    <Compile Include="..\EpicProcessImage.cs" Link="EpicProcessImage.cs" />
+    <Compile Include="..\ClientProfiles.cs" Link="ClientProfiles.cs" />
+  </ItemGroup>
+</Project>
